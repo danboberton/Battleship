@@ -15,7 +15,7 @@ class TextController : public AbstractController {
     void fire(int, int);
     bool setShip(Ship*);
     bool yesNo(std::string);
-    void showSetup();
+    
 
     private:
 };

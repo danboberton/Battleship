@@ -22,12 +22,38 @@ void Board::buildShips(){
 
 void Board::buildBoard(){
 
-    // TODO build board
+    // Make new board object
+    _board = new std::vector<std::vector<Coord>>;
+
+    // new objects
+    std::vector<Coord>* newCol;
+    Coord* newCoord;
+
+    
     for (int y = 0; y < _sizeY; y++){
-        // _board.push_back(new std::vector<Coord>);
+
+        newCol = new std::vector<Coord>;
+
+        _board->push_back(*newCol);
+        
         for (int x = 0; x < _sizeX; x++){
 
-
+            newCol->push_back(*(new Coord(x, y)));
         }
     }
+}
+
+Coord* Board::get(int x, int y){
+
+    // Return the address of the saught Coord
+    return &_board->at(y).at(x);
+
+}
+
+int Board::getX(){
+    return _sizeX;
+}
+
+int Board::getY(){
+    return _sizeY;
 }

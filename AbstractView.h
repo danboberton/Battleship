@@ -1,8 +1,9 @@
 // View Abstract Header
 #pragma once
 #include <string>
-
-class Player;
+#include "Player.h"
+#include "Board.h"
+#include "Coord.h"
 
 class AbstractView{
 

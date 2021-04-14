@@ -12,6 +12,7 @@ Battleship::Battleship(){
     _controller = new TextController();
     _view = new TextView();
     _numPlayers = 2;
+    _players.push_back(*(new Player));
 }
 
 // Destructor
@@ -24,6 +25,9 @@ Battleship::~Battleship(){
 void Battleship::start(){
 
     _view->print("Battleship started.");
+
+    // Dan working on displayBoard
+    _view->displayBoard(&_players.at(0));
 
 }
 

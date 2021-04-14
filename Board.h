@@ -1,10 +1,11 @@
 // Board Header
  #pragma once
  #include "Ship.h"
-
- class Coord; // Forward declaration
+ #include "Coord.h"
 
  #include <vector>
+
+namespace CSC234{
 
 class Board{
 
@@ -16,15 +17,21 @@ class Board{
 
     // Config
     void buildShips();
+    void buildBoard();
 
     // Get Sets
     Coord* get(int, int); // Get coordinate
 
+    int getX();
+    int getY();
+
     private:
         int _sizeX;
         int _sizeY;
-        std::vector<std::vector<Coord>> _board;
+        std::vector<std::vector<Coord>>* _board;
         std::vector<Ship> _ships;
 
     
 };
+
+} // end namespace CSC234

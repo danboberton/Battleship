@@ -6,6 +6,17 @@
  */
 
 #include "Player.h"
-#include <string>
-#include <iostream>
-using namespace std;
+
+Player::Player(){
+
+_board = new CSC234::Board(16, 16);
+_board->buildBoard();
+
+}
+
+CSC234::Board* Player::getBoard(){
+    return _board;
+}
+
+
+
