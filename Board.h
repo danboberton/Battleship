@@ -5,7 +5,7 @@
 
  #include <vector>
 
-namespace CSC234{
+namespace battleship{
 
 class Board{
 
@@ -20,7 +20,7 @@ class Board{
     void buildBoard();
 
     // Get Sets
-    Coord* get(int, int); // Get coordinate
+    Coord get(int, int); // Get coordinate
 
     int getX();
     int getY();

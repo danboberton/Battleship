@@ -1,8 +1,9 @@
-// Coord Implementation
-
+// Coord Implementation Can you type?
+//Me? You! That's pretty cool. I can't backspace thoiuhh' Yeah ca... can't add new lines wither... either  h... jist on this line lol.   *kust on  *just on this linw, *line can you backa *backspace / delte for fow'
+// I see you highlighting though.
 #include "Coord.h"
 
-using namespace CSC234;
+using namespace battleship;
 
 Coord::Coord(){
 

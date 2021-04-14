@@ -2,6 +2,7 @@
 #pragma once
 #include "AbstractView.h"
 
+namespace battleship{
 
 class TextView : public AbstractView{
 
@@ -22,6 +23,8 @@ class TextView : public AbstractView{
     const char OPEN_SPACE = '~';
     const char HIT_SPACE = 'x';
     const char SHIP_SPACE = '#';
-    string HLine(int); // gets a formatting line for displayBoard
+    std::string HLine(int); // gets a formatting line for displayBoard
 
 };
+
+}

@@ -2,7 +2,7 @@
 #pragma once
 #include "Ship.h"
 
-namespace CSC234 {
+namespace battleship {
 
 class Coord{
 

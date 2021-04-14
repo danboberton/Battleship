@@ -2,6 +2,8 @@
 
 #include "TextController.h"
 
+using namespace battleship;
+
 // Constructors
 TextController::TextController(){}
 

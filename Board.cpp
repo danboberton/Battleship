@@ -43,10 +43,10 @@ void Board::buildBoard(){
     }
 }
 
-Coord* Board::get(int x, int y){
+Coord Board::get(int x, int y){
 
     // Return the address of the saught Coord
-    return &_board->at(y).at(x);
+    return 
 
 }
 

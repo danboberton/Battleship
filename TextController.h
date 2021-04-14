@@ -3,6 +3,9 @@
 #pragma once
 #include "AbstractController.h"
 
+namespace battleship{
+
+
 class TextController : public AbstractController {
 
     public:
@@ -19,3 +22,5 @@ class TextController : public AbstractController {
 
     private:
 };
+
+} // end namespace

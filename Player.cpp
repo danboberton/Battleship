@@ -7,14 +7,16 @@
 
 #include "Player.h"
 
+using namespace battleship;
+
 Player::Player(){
 
-_board = new CSC234::Board(16, 16);
+_board = new Board(16, 16);
 _board->buildBoard();
 
 }
 
-CSC234::Board* Player::getBoard(){
+Board* Player::getBoard(){
     return _board;
 }
 

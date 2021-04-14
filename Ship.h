@@ -7,9 +7,9 @@
 
 #include <string>
 #pragma once
-using namespace std;
 
-namespace CSC234{
+
+namespace battleship{
     class Ship{
     public:
 

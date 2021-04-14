@@ -2,7 +2,7 @@
 
 #include "TextView.h"
 #include <string>
-using namespace CSC234;
+using namespace battleship;
 
 class Player;
 
@@ -24,7 +24,7 @@ void TextView::print(std::string print){
 void TextView::displayBoard(Player* player){
 
     
-    string buffer = "";
+    std::string buffer = "";
 
     Board* board = player->getBoard();
     int xSize = board->getX();
@@ -77,8 +77,8 @@ void TextView::showSetup(){
  *  +-+-+-+-+-+-+-+
  * @return string 
  */
-string TextView::HLine(int width){
-    string buffer = " ";
+std::string TextView::HLine(int width){
+    std::string buffer = " ";
 
     buffer.push_back(CORNER_DELIM);
     for (int x = 0; x < width; x++){
