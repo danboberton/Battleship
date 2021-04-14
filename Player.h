@@ -5,15 +5,19 @@
  * @version2021-04-12
  */
 
-#include <string>
 #pragma once
-using namespace std;
+#include "Board.h"
 
-namespace CSC234{
+
     class Player{
     public:
+    Player();
+
+    CSC234::Board* getBoard();
 
     private:
+    std::string _name;
+    CSC234::Board* _board;
+
 
     }; //end class Player
-} //end namespace CSC234
