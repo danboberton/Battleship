@@ -1,12 +1,13 @@
 // Text Controller Header
 
 #pragma once
-#include "AbstractController.h"
+#include "Ship.h"
+#include <string>
 
 namespace battleship{
 
 
-class TextController : public AbstractController {
+class TextController {
 
     public:
 

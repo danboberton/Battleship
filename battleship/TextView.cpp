@@ -29,28 +29,28 @@ void TextView::displayBoard(Player* player){
     Board* board = player->getBoard();
     int xSize = board->getX();
     int ySize = board->getY();
-    Coord* curCoord;
+    Coord curCoord;
 
     // Print top line
     printf("%s\n", HLine(xSize).c_str());
 
     // Print row
-    buffer.push_back(VERT_DELIM);
     for (int y = 0; y < ySize; y++){
 
-        buffer.push_back(OPEN_SPACE);
+        buffer.push_back(VERT_DELIM);
 
         for (int x = 0; x < xSize; x++){
 
-            // TODO Working here, not returning coord;
             curCoord = board->get(x, y);
 
             // Check if coord is hit
-            if (curCoord->isHit()){
+            if (curCoord.isHit()){
                 buffer.push_back(HIT_SPACE);
             } else {
                 buffer.push_back(OPEN_SPACE);
             }
+
+            buffer.push_back(VERT_DELIM);
 
         }
 
@@ -65,6 +65,8 @@ void TextView::displayBoard(Player* player){
 
     } 
 
+    printf("%c = Open Space\n%c = Hit Space\n", OPEN_SPACE, HIT_SPACE);
+
 }
 
 void TextView::showSetup(){
@@ -78,7 +80,7 @@ void TextView::showSetup(){
  * @return string 
  */
 std::string TextView::HLine(int width){
-    std::string buffer = " ";
+    std::string buffer = "";
 
     buffer.push_back(CORNER_DELIM);
     for (int x = 0; x < width; x++){

@@ -17,7 +17,7 @@ Coord::Coord(int x, int y){
 }
 
 bool Coord::isHit(){
-    if (_ship != NULL){
+    if (_ship == NULL){
         return false;
     } else {
         return true;

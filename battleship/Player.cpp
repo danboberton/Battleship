@@ -11,7 +11,8 @@ using namespace battleship;
 
 Player::Player(){
 
-_board = new Board(16, 16);
+// TODO maybe ask for board size
+_board = new Board(10, 10);
 _board->buildBoard();
 
 }

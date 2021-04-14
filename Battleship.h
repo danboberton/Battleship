@@ -3,9 +3,9 @@
 
 #include <vector>
 #include "Casino.h"
-#include "AbstractView.h"
-#include "AbstractController.h"
-#include "Player.h"
+#include "battleship/AbstractView.h"
+#include "battleship/TextController.h"
+#include "battleship/Player.h"
 
 namespace CSC234 {
 
@@ -22,9 +22,9 @@ class Battleship : public Casino {
 
     private:
     int _numPlayers; // Number of players.
-    std::vector<Player> _players;
-    AbstractController* _controller;
-    AbstractView* _view;
+    std::vector<battleship::Player> _players;
+    battleship::TextController* _controller;
+    battleship::AbstractView* _view;
 
 };
 

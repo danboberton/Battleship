@@ -1,7 +1,8 @@
 // Board Implementation
 
 #include "Board.h"
-using namespace CSC234;
+#include <vector>
+using namespace battleship;
 
 Board::Board(int x, int  y){
 
@@ -23,7 +24,7 @@ void Board::buildShips(){
 void Board::buildBoard(){
 
     // Make new board object
-    _board = new std::vector<std::vector<Coord>>;
+    _board = *(new std::vector<std::vector<Coord>>);
 
     // new objects
     std::vector<Coord>* newCol;
@@ -34,11 +35,12 @@ void Board::buildBoard(){
 
         newCol = new std::vector<Coord>;
 
-        _board->push_back(*newCol);
+        _board.push_back(*newCol);
         
         for (int x = 0; x < _sizeX; x++){
 
-            newCol->push_back(*(new Coord(x, y)));
+            newCoord = new Coord(x, y);
+            _board[y].push_back(*newCoord);
         }
     }
 }
@@ -46,7 +48,7 @@ void Board::buildBoard(){
 Coord Board::get(int x, int y){
 
     // Return the address of the saught Coord
-    return 
+    return _board[y][x];
 
 }
 

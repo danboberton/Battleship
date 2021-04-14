@@ -4,6 +4,7 @@
 #include "Player.h"
 #include "Board.h"
 #include "Coord.h"
+namespace battleship{
 
 class AbstractView{
 
@@ -16,3 +17,5 @@ class AbstractView{
     private:
 
 };
+
+} // end namespace

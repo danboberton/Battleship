@@ -19,7 +19,7 @@ class TextView : public AbstractView{
 
     const char VERT_DELIM = '|';
     const char HORZ_DELIM = '-';
-    const char CORNER_DELIM = '+';
+    const char CORNER_DELIM = ' ';
     const char OPEN_SPACE = '~';
     const char HIT_SPACE = 'x';
     const char SHIP_SPACE = '#';

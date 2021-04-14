@@ -28,7 +28,7 @@ class Board{
     private:
         int _sizeX;
         int _sizeY;
-        std::vector<std::vector<Coord>>* _board;
+        std::vector<std::vector<Coord>> _board;
         std::vector<Ship> _ships;
 
     
