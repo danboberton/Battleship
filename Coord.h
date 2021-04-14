@@ -1,6 +1,6 @@
 // Coord Header
 #pragma once
-#include "Ship.h";
+#include "Ship.h"
 
 namespace CSC234 {
 
